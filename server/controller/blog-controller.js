@@ -82,7 +82,7 @@ const updateBlogPost = async (req, res) => {
   } catch (e) {
     console.log(e);
 
-    return res.send(500).json({
+    return res.status(500).json({
       message:
         "Something went wrong while perfoming an update!! Please try again",
     });
